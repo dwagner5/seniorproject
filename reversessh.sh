@@ -1,6 +1,6 @@
 #!/bin/bash
 createTunnel() {
-  /usr/bin/ssh -N -R 2222:localhost:22 serverUser@25.25.25.25
+  /usr/bin/ssh -N -R 2222:localhost:22 serverUser@25.25.25.25 # actual server name goes here
   if [[ $? -eq 0 ]]; then
     echo Tunnel to Raspberry Pi created successfully
   else
