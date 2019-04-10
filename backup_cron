@@ -21,3 +21,4 @@
 # 
 # m h  dom mon dow   command
 0 * * * * bash /home/pi/scripts/launch.sh
+* * * * * bash /home/pi/scripts/launchSSH.sh
