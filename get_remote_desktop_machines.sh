@@ -28,8 +28,4 @@ cd /remote_desktop_machines/
 put $newestfilename
 EOF
 
-
-echo "cleaning up"
-rm $newestfilename
-
 echo "done!"
