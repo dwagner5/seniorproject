@@ -1,6 +1,4 @@
 #!/bin/bash
-echo "Creating tunnel"
-/home/pi/scripts/remotessh/reversessh.sh
 echo "Getting MACs"
 /home/pi/scripts/MAC_Addresses/get_mac.sh
 echo "Finding remote desktop machines"
