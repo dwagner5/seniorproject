@@ -18,8 +18,4 @@ cd /mac_addresses/
 put $newestfilename
 EOF
 
-
-echo "cleaning up"
-rm $newestfilename
-
 echo "done!"
