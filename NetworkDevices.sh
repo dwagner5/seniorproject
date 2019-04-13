@@ -18,8 +18,8 @@ newestfilename="`ls -t $dir| head -1`"
 echo "writing to ftp"
 
 ftp -n <<EOF
-open ftp.drivehq.com 
-user dwagner5 applejacks420
+open ftp server 
+user username password
 cd /devices/
 put $newestfilename
 EOF
