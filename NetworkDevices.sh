@@ -6,7 +6,7 @@ current_time=$(date "+%Y.%m.%d-%H.%M.%S")
 
 # Get IP
 ip=$(hostname  -I | cut -f1 -d' ')
-# Set ip to a range, for example, 192.168.4.8 becomes 192.168.4.*
+# Set ip to a range, for example, 192.168.4.8 becomes 192.168.4.8-255
 ip="${ip::-1}""-255"
 
 # Scan for devices
