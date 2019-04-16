@@ -7,10 +7,10 @@ current_time=$(date "+%Y.%m.%d-%H.%M.%S")
 # Get IP
 ip=$(hostname  -I | cut -f1 -d' ')
 # Set ip to a range, for example, 192.168.4.8 becomes 192.168.4.*
-ip="${ip::-2}""*"
+ip="${ip::-1}""-255"
 
 # Scan for devices
-nmap -sP $ip > "devices_$current_time.txt"
+nmap $ip | tee "devices_$current_time.txt"
 
 #Get the file
 newestfilename="`ls -t $dir| head -1`"
